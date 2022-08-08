@@ -47,7 +47,7 @@ import System.FilePath   ((<.>), (</>))
  -}
 
 pandocHtml :: PandocDocument
-pandocHtml = pd { writer        = writeHtmlString
+pandocHtml = pd { writer        = writeHtml5String
                 , extension     = "html"
                 , templateName  = "html"
                 , extGraphProps = Just VProps { grSize = DefaultSize
